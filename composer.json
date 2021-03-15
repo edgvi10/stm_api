@@ -1,0 +1,33 @@
+{
+    "name": "linkinfo/basic_arm",
+    "description": "Api para gerenciamento de Atendimentos de Call Center",
+    "version": "1.0.0",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Link Informática RJ",
+            "email": "sac@linkinformaticarj.com.br"
+        },
+        {
+            "name": "Eduardo Vieira",
+            "email": "edgvi10@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "7.4.*",
+        "edgvi10/phphelpers": "dev-master",
+        "slim/slim": "3.*",
+        "phpmailer/phpmailer": "^6.3",
+        "picqer/php-barcode-generator": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Linkinfo\\": "Controllers/"
+        }
+    },
+    "scripts": {
+        "start": [
+            "php -S 0.0.0.0:8080 -t Public Public/index.php"
+        ]
+    }
+}
